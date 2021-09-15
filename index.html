@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>登入系統</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="shield" class="">
+    <div id=wrap class="">
+      <p id="loader1" class=""></p>
+      <p id="loader2" class=""></p>
+    </div>
+
+  </div>
+
+  <div class="container">
+    <!-- tab -->
+    <div class="tab" id="tab">
+      <div class="tab__link tab__link--active">註冊</div>
+      <div class="tab__link">登入</div>
+    </div>
+
+
+    <div class="tab__content">
+      <!-- tab content - 註冊 -->
+      <form id="singup" class="tab__content--form active" action="index.html">
+        輸入帳號：
+        <input id="singup-account" type="text" name="singup-account">
+        <br>
+        設定密碼：
+        <input id="singup-password" type="password" name="singup-password">
+        <br>
+        確認密碼：
+        <input id="singup-password-check" type="password" name="singup-password-check">
+        <br>
+        <input id="singup-submit" type="button" value="送出">
+      </form>
+
+      <!-- tab content - 登入 -->
+      <form id="singin" class="tab__content--form" action="index.html">
+        帳號：
+        <input id="singin-account" type="text" name="singup-account">
+        <br>
+        密碼：
+        <input id="singin-password" type="password" name="singup-password">
+        <br>
+        <input id="singin-submit" type="button" value="送出">
+      </form>
+
+    </div>
+    
+
+  </div>
+  
+
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="all.js"></script>
+</body>
+
+</html>
